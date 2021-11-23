@@ -2,7 +2,7 @@ name: Extract Lisbon meteo data
 
 on:
     schedule:
-      - cron: "2 */12 * * *"
+      - cron: "*/5 12 * * *"
 
 jobs:
     build:
