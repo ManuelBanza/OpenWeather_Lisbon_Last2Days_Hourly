@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-# Ligar ao JSON
+# Ligar ao JSON Forecast
 
 response = requests.get('https://api.openweathermap.org/data/2.5/onecall?lat=38.7416502&lon=-9.1923936&units=metric&exclude=minutely,current,daily,alerts&appid=46b4f2f0a971ca74c1934cd0108dbfdf')
 jsondata = response.json()
