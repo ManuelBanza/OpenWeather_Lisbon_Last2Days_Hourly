@@ -25,7 +25,7 @@ weather_1d['date'] = pd.to_datetime(weather_1d['dt']).dt.date
 weather_1d['hour'] = pd.to_datetime(weather_1d['dt']).dt.hour
 
 
-response = requests.get('https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=38.7416502&lon=-9.1923936&dt={}&units=metric&exclude=minutely,current,daily,alerts&appid=46b4f2f0a971ca74c1934cd0108dbfdf'.format(unixtime_2d))
+response = requests.get('https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=38.7167&lon=-9.1333&dt={}&units=metric&exclude=minutely,current,daily,alerts&appid=46b4f2f0a971ca74c1934cd0108dbfdf'.format(unixtime_2d))
 jsondata = response.json()
 jdata = jsondata['hourly']
 
