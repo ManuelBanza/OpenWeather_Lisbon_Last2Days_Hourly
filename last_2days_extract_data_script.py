@@ -14,7 +14,7 @@ unixtime_2d = str(int(time.mktime(before_yesterday.timetuple())))
 
 # Ligar ao JSON
 
-response = requests.get('https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=38.7416502&lon=-9.1923936&dt={}&units=metric&exclude=minutely,current,daily,alerts&appid=46b4f2f0a971ca74c1934cd0108dbfdf'.format(unixtime_1d))
+response = requests.get('https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=38.7167&lon=-9.1333&dt={}&units=metric&exclude=minutely,current,daily,alerts&appid=46b4f2f0a971ca74c1934cd0108dbfdf'.format(unixtime_1d))
 jsondata = response.json()
 jdata = jsondata['hourly']
 
